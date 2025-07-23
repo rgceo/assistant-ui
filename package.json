@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "docs:dev": "pnpm --filter=@assistant-ui/docs dev",
+    "build": "turbo build",
     "ci:version": "changeset version && pnpm install --no-frozen-lockfile",
     "ci:publish": "turbo build --filter=\"./packages/*\" && changeset publish",
     "prettier": "prettier \"{examples,packages,apps}/**/*.{js,jsx,ts,tsx}\" --check",
